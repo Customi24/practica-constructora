@@ -1,0 +1,172 @@
+<!-- Declaración del tipo de documento para HTML5 -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Configuraciones básicas de codificación, responsividad y estilos -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio | Constructora Morgon</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ENCABEZADO: Contiene el logo, la navegación y la barra de búsqueda -->
+    <header class="header">
+        <!-- Logo de la empresa -->
+        <div class="logo">
+            <img src="img/principal/logo.jpg" alt="Constructora Morgon" class="logo-img">
+        </div>
+        
+        <!-- Menú de navegación principal -->
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html" class="active">Inicio</a></li>
+                <li><a href="empresa.html">La Empresa</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="contacto.html">Contáctanos</a></li>
+            </ul>
+        </nav>
+
+        <!-- Barra y botón de búsqueda -->
+        <div class="search-container">
+            <input type="search" placeholder="Buscar proyectos..." class="search-bar">
+            <button class="search-btn">
+                <img src="iconos/lupa.png" alt="Buscar" class="search-icon-img">
+            </button>
+        </div>
+    </header>
+
+    <!-- CONTENIDO PRINCIPAL: La información que destaca en la página de inicio -->
+    <main class="main-index">
+        
+        <!-- Sección Hero: Banner a pantalla completa con el mensaje principal y botón de acción -->
+        <section class="hero-full">
+            <div class="hero-content">
+                <h2>Construimos tu futuro, cimiento a cimiento</h2>
+                <p>Especialistas en desarrollo de infraestructura, proyectos comerciales y residenciales. Calidad, seguridad y compromiso en cada obra que entregamos.</p>
+                <a href="servicios.html" class="cta-button">Conoce nuestros servicios</a>
+            </div>
+        </section>
+
+        <!-- Sección de Proyectos: Muestra los carruseles con imágenes destacadas -->
+        <section class="carousels-section">
+            <div class="page-container">
+                <div class="section-title text-center">
+                    
+                    <h2>Nuestros Proyectos Destacados</h2>
+                    <p>Explora nuestras obras recientes y el equipo que las hace posibles.</p>
+                </div>
+
+                <div class="carousels-wrapper">
+                    
+                    <!-- Primer carrusel de imágenes -->
+                    <div class="carousel-container">
+                        <div class="carousel-track" id="track1">
+                            <img src="img/banner1/banner1.1.jpg" class="carousel-slide active" alt="banner1">
+                            <img src="img/banner1/banner1.2.jpg" class="carousel-slide" alt="banner1">
+                            <img src="img/banner1/banner1.3.jpg" class="carousel-slide" alt="banner1">
+                            <img src="img/banner1/banner1.4.jpg" class="carousel-slide" alt="banner1">
+                            <img src="img/banner1/banner1.5.jpg" class="carousel-slide" alt="banner1">
+                        </div>
+                        <!-- Botones de control (Anterior/Siguiente) -->
+                        <button class="carousel-btn prev" onclick="moveSlide('track1', 'dots1', -1)">&#10094;</button>
+                        <button class="carousel-btn next" onclick="moveSlide('track1', 'dots1', 1)">&#10095;</button>
+                        <!-- Indicadores (Puntitos para saltar a una imagen específica) -->
+                        <div class="carousel-indicators" id="dots1">
+                            <span class="dot active" onclick="jumpToSlide('track1', 'dots1', 0)"></span>
+                            <span class="dot" onclick="jumpToSlide('track1', 'dots1', 1)"></span>
+                            <span class="dot" onclick="jumpToSlide('track1', 'dots1', 2)"></span>
+                            <span class="dot" onclick="jumpToSlide('track1', 'dots1', 3)"></span>
+                            <span class="dot" onclick="jumpToSlide('track1', 'dots1', 4)"></span>
+                        </div>
+                    </div>
+
+                    <!-- Segundo carrusel de imágenes -->
+                    <div class="carousel-container">
+                        <div class="carousel-track" id="track2">
+                            <img src="img/banner2/banner2.1.jpg" class="carousel-slide active" alt="banner2">
+                            <img src="img/banner2/banner2.2.jpg" class="carousel-slide" alt="banner2">
+                            <img src="img/banner2/banner2.3.jpg" class="carousel-slide" alt="banner2">
+                            <img src="img/banner2/banner2.4.jpg" class="carousel-slide" alt="banner2">
+                            <img src="img/banner2/banner2.5.jpg" class="carousel-slide" alt="banner2">
+                        </div>
+                        <!-- Botones de control (Anterior/Siguiente) -->
+                        <button class="carousel-btn prev" onclick="moveSlide('track2', 'dots2', -1)">&#10094;</button>
+                        <button class="carousel-btn next" onclick="moveSlide('track2', 'dots2', 1)">&#10095;</button>
+                        <!-- Indicadores (Puntitos para saltar a una imagen específica) -->
+                        <div class="carousel-indicators" id="dots2">
+                            <span class="dot active" onclick="jumpToSlide('track2', 'dots2', 0)"></span>
+                            <span class="dot" onclick="jumpToSlide('track2', 'dots2', 1)"></span>
+                            <span class="dot" onclick="jumpToSlide('track2', 'dots2', 2)"></span>
+                            <span class="dot" onclick="jumpToSlide('track2', 'dots2', 3)"></span>
+                            <span class="dot" onclick="jumpToSlide('track2', 'dots2', 4)"></span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main> 
+
+    <!-- PIE DE PÁGINA: Enlaces, redes sociales e información de contacto -->
+    <footer class="footer">
+        <div class="footer-container">
+            
+            <!-- Columna 1: Logo corporativo y redes sociales -->
+            <div class="footer-col logo-col">
+                <img src="img/principal/logo.jpg" alt="Constructora Morgon" class="footer-logo-img">
+                <div class="social-links">
+                    <a href="#" class="social-icon"><img src="iconos/facebook.png" alt="facebook"></a>
+                    <a href="#" class="social-icon"><img src="iconos/instagram.png" alt="instagram"></a>
+                    <a href="#" class="social-icon"><img src="iconos/email.png" alt="email"></a>
+                    <a href="#" class="social-icon"><img src="iconos/whatsapp.png" alt="whatsapp"></a>
+                </div>
+            </div>
+
+            <!-- Columna 2: Enlaces rápidos de navegación -->
+            <div class="footer-col links-col">
+                <h3>Información</h3>
+                <ul>
+                    <li><a href="empresa.html">Nosotros</a></li>
+                    <li><a href="servicios.html">Desarrollos</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="contacto.html">Contáctanos</a></li>
+                </ul>
+            </div>
+
+            <!-- Columna 3: Tabla con detalles de contacto directo -->
+            <div class="footer-col contact-col">
+                <h3>Contacto</h3>
+                <table class="contact-table">
+                    <tr>
+                        <td class="icon-cell"><img src="iconos/telefono.png" alt="Tel" class="contact-icon-img"></td>
+                        <td>Telefono <br><small>+52 (461)-302-7231</small></td>
+                    </tr>
+                    <tr>
+                        <td class="icon-cell"><img src="iconos/email.png" alt="Email" class="contact-icon-img"></td>
+                        <td>Correo <br><small>info@morgon.com</small></td>
+                    </tr>
+                    <tr>
+                        <td class="icon-cell"><img src="iconos/instagram.png" alt="Instagram" class="contact-icon-img"></td>
+                        <td>Instagram <br><small>@ConstructoraMorgon</small></td>
+                    </tr>
+                    <tr>
+                        <td class="icon-cell"><img src="iconos/whatsapp.png" alt="Tel" class="contact-icon-img"></td>
+                        <td>Whatsapp <br><small>+52 (461)-302-7231</small></td>
+                    </tr>
+                </table>
+            </div>
+            
+        </div>
+
+        <!-- Barra final del pie de página con derechos reservados y legales -->
+        <div class="footer-bottom">
+            <p>Todos los Derechos Reservados. 2026 &copy; Constructora Morgon | <a href="#">Aviso de privacidad</a> | <a href="#">Términos y condiciones</a></p>
+        </div>
+    </footer>
+
+    <!-- Enlace al archivo de JavaScript para darle funcionalidad a los carruseles -->
+    <script src="script.js"></script>
+</body>
+</html>
