@@ -1,0 +1,122 @@
+<!-- Declaración del tipo de documento para HTML5 -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Configuraciones básicas de codificación, responsividad y estilos -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio | Constructora Morgon</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ENCABEZADO: Contiene el logo, la navegación y la barra de búsqueda -->
+    <header class="header">
+        <!-- Logo de la empresa -->
+        <div class="logo">
+            <img src="img/principal/logo.jpg" alt="Constructora Morgon" class="logo-img">
+        </div>
+        
+        <!-- Menú de navegación principal -->
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html" >Inicio</a></li>
+                <li><a href="empresa.html">La Empresa</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="serviciosExpress.html" class="active">Servicios Express</a></li>
+                <li><a href="contacto.html">Contáctanos</a></li>
+            </ul>
+        </nav>
+
+        <!-- Barra y botón de búsqueda -->
+        <div class="search-container">
+            <input type="search" placeholder="Buscar proyectos..." class="search-bar">
+            <button class="search-btn">
+                <img src="iconos/lupa.png" alt="Buscar" class="search-icon-img">
+            </button>
+        </div>
+    </header>
+
+    <!-- CONTENIDO PRINCIPAL: La información que destaca en la página de inicio -->
+    <main class="main-express">
+        <section class="search-wrap">
+            <h1>Servicios Express</h1>
+                <div class="search-box"> <input type="text" id="inputBusqueda" placeholder="¿Qué servicio buscas?" class="input-curvo">
+            <button id="btnFiltrar" class="btn-curvo">Buscar</button>
+        </div>
+</section>
+
+        <div id="contenedor-grid" class="services-grid-large">
+        </div>
+    </main>
+
+    <!-- PIE DE PÁGINA: Enlaces, redes sociales e información de contacto -->
+    <footer class="footer">
+        <div class="footer-container">
+            
+            <!-- Columna 1: Logo corporativo y redes sociales -->
+            <div class="footer-col logo-col">
+                <img src="img/principal/logo.jpg" alt="Constructora Morgon" class="footer-logo-img">
+                <div class="social-links">
+                    <a href="#" class="social-icon"><img src="iconos/facebook.png" alt="facebook"></a>
+                    <a href="#" class="social-icon"><img src="iconos/instagram.png" alt="instagram"></a>
+                    <a href="#" class="social-icon"><img src="iconos/email.png" alt="email"></a>
+                    <a href="#" class="social-icon"><img src="iconos/whatsapp.png" alt="whatsapp"></a>
+                </div>
+            </div>
+
+            <!-- Columna 2: Enlaces rápidos de navegación -->
+            <div class="footer-col links-col">
+                <h3>Información</h3>
+                <ul>
+                    <li><a href="empresa.html">Nosotros</a></li>
+                    <li><a href="servicios.html">Desarrollos</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="contacto.html">Contáctanos</a></li>
+                </ul>
+            </div>
+
+            <!-- Columna 3: Tabla con detalles de contacto directo -->
+            <div class="footer-col contact-col">
+                <h3>Contacto</h3>
+                <table class="contact-table">
+                    <tr>
+                        <td class="icon-cell"><img src="iconos/telefono.png" alt="Tel" class="contact-icon-img"></td>
+                        <td>Telefono <br><small>+52 (461)-302-7231</small></td>
+                    </tr>
+                    <tr>
+                        <td class="icon-cell"><img src="iconos/email.png" alt="Email" class="contact-icon-img"></td>
+                        <td>Correo <br><small>info@morgon.com</small></td>
+                    </tr>
+                    <tr>
+                        <td class="icon-cell"><img src="iconos/instagram.png" alt="Instagram" class="contact-icon-img"></td>
+                        <td>Instagram <br><small>@ConstructoraMorgon</small></td>
+                    </tr>
+                    <tr>
+                        <td class="icon-cell"><img src="iconos/whatsapp.png" alt="Tel" class="contact-icon-img"></td>
+                        <td>Whatsapp <br><small>+52 (461)-302-7231</small></td>
+                    </tr>
+                </table>
+            </div>
+            
+        </div>
+
+        <!-- Barra final del pie de página con derechos reservados y legales -->
+        <div class="footer-bottom">
+            <p>Todos los Derechos Reservados. 2026 &copy; Constructora Morgon | <a href="#">Aviso de privacidad</a> | <a href="#">Términos y condiciones</a></p>
+        </div>
+    </footer>
+
+    <div id="modalServicio" class="modal">
+    <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <div id="modal-body-content">
+            </div>
+    </div>
+</div>
+
+    <!-- Scripts: Global para todo el sitio y específico para esta página -->
+    <script src="funciones/global.js"></script>
+    <script src="funciones/serviciosExpress.js"></script>
+</body>
+</html>
