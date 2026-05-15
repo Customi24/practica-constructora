@@ -1,0 +1,92 @@
+.page-container{
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.section-title{
+    margin-bottom: 50px;
+
+}
+
+.section-title h2{
+    color: #000;
+    font-size: 36px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.section-title p{
+    color: #555;
+    font-size: 18px;
+}
+
+/*Diseño pantalla dividida*/
+.contact-split{
+    display: flex;
+    gap: 50px;
+    align-items: stretch;
+}
+
+.form-container{
+    flex: 1;
+    background: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    text-align: left;
+    border-left: 8px solid #000000;
+}
+
+.contact-image-wrapper{
+    flex:1;
+}
+
+.contact-hero-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.form-group{
+    margin-bottom: 20px;
+
+}
+
+.form-group label{
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #000;
+    font-size: 14px;
+
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2 px solid #bdc3c7;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #f1c40f;
+    background-color: #ffffff;
+}
+
+.form-container .cta-button{
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}

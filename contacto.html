@@ -1,0 +1,154 @@
+<!-- Declaración del tipo de documento para HTML5 -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Configuraciones básicas de codificación, responsividad y estilos -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio | Constructora Morgon</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/contacto.css">
+</head>
+<body>
+
+    <!-- ENCABEZADO: Contiene el logo, la navegación y la barra de búsqueda -->
+    <header class="header">
+        <!-- Logo de la empresa -->
+        <div class="logo">
+            <img src="img/principal/logo.jpg" alt="Constructora Morgon" class="logo-img">
+        </div>
+        
+        <!-- Menú de navegación principal -->
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html" >Inicio</a></li>
+                <li><a href="empresa.html">La Empresa</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="serviciosExpress.html">Servicios Express</a></li>
+                <li><a href="contacto.html" class="active">Contáctanos</a></li>
+            </ul>
+        </nav>
+
+        <!-- Barra y botón de búsqueda -->
+        <div class="search-container">
+            <input type="search" placeholder="Buscar proyectos..." class="search-bar">
+            <button class="search-btn">
+                <img src="iconos/lupa.png" alt="Buscar" class="search-icon-img">
+            </button>
+        </div>
+    </header>
+
+    <!-- CONTENIDO PRINCIPAL: La información que destaca en la página de inicio -->
+    <main class="main-content">
+        <div class="page-container">
+            <div class="section-title">
+                <h2>Iniciemos tu Proyecto</h2>
+                <p>Dejanos tus datos y un ingeniero especialista te contactara a la brevedad</p>
+            </div>
+
+            <div class="contact-split">
+                <div class="form-container">
+                    <form  id="contactForm" action="#" method="POST">
+                        <div class="form-group">
+                            <label for="nombre">Nombre Completo:</label>
+                            <input type="text" id="nombre" name="nombre" placeholder="Ej. Mauricio Morales" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="correo">Correo Electrónico:</label>
+                            <input type="email" id="correo" name="correo" placeholder="paquito@gmail.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="servicio">Servicio de Interes</label>
+                            <select name="servicio" id="servicio" required>
+                                <option value="residencial">Construccion Residencial</option>
+                                <option value="industrial">Nave Industrial</option>
+                                <option value="presupuesto">Presupuesto Inicial</option>
+                                <option value="pisos">Pegado de Pisos para salones</option>
+                                <option value="tinaco">Montura de tinaco e instalaciones</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="mensaje">Detalles del Proyecto a realizar</label>
+                            <textarea 
+                                name="mensaje" 
+                                id="mensaje" 
+                                rows="5"
+                                placeholder="Cuentanos sobre tu terreno, metro cuadrados, idea general"
+                                required
+                                ></textarea>
+                        </div>
+                        <button class="cta-button" type="submit">Enviar Solicitud</button>
+                    </form>
+                </div>
+                <div class="contact-image-wrapper">
+                    <img src="img/contacto/contactanos.jpg" alt="Contacto Contructura" class="contact-hero-img">
+                </div>
+
+            </div>
+        </div>        
+       
+
+    </main> 
+
+    <!-- PIE DE PÁGINA: Enlaces, redes sociales e información de contacto -->
+    <footer class="footer">
+        <div class="footer-container">
+            
+            <!-- Columna 1: Logo corporativo y redes sociales -->
+            <div class="footer-col logo-col">
+                <img src="img/principal/logo.jpg" alt="Constructora Morgon" class="footer-logo-img">
+                <div class="social-links">
+                    <a href="#" class="social-icon"><img src="iconos/facebook.png" alt="facebook"></a>
+                    <a href="#" class="social-icon"><img src="iconos/instagram.png" alt="instagram"></a>
+                    <a href="#" class="social-icon"><img src="iconos/email.png" alt="email"></a>
+                    <a href="#" class="social-icon"><img src="iconos/whatsapp.png" alt="whatsapp"></a>
+                </div>
+            </div>
+
+            <!-- Columna 2: Enlaces rápidos de navegación -->
+            <div class="footer-col links-col">
+                <h3>Información</h3>
+                <ul>
+                    <li><a href="empresa.html">Nosotros</a></li>
+                    <li><a href="servicios.html">Desarrollos</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="contacto.html">Contáctanos</a></li>
+                </ul>
+            </div>
+
+            <!-- Columna 3: Tabla con detalles de contacto directo -->
+            <div class="footer-col contact-col">
+                <h3>Contacto</h3>
+                <table class="contact-table">
+                    <tr>
+                        <td class="icon-cell"><img src="iconos/telefono.png" alt="Tel" class="contact-icon-img"></td>
+                        <td>Telefono <br><small>+52 (461)-302-7231</small></td>
+                    </tr>
+                    <tr>
+                        <td class="icon-cell"><img src="iconos/email.png" alt="Email" class="contact-icon-img"></td>
+                        <td>Correo <br><small>info@morgon.com</small></td>
+                    </tr>
+                    <tr>
+                        <td class="icon-cell"><img src="iconos/instagram.png" alt="Instagram" class="contact-icon-img"></td>
+                        <td>Instagram <br><small>@ConstructoraMorgon</small></td>
+                    </tr>
+                    <tr>
+                        <td class="icon-cell"><img src="iconos/whatsapp.png" alt="Tel" class="contact-icon-img"></td>
+                        <td>Whatsapp <br><small>+52 (461)-302-7231</small></td>
+                    </tr>
+                </table>
+            </div>
+            
+        </div>
+
+        <!-- Barra final del pie de página con derechos reservados y legales -->
+        <div class="footer-bottom">
+            <p>Todos los Derechos Reservados. 2026 &copy; Constructora Morgon | <a href="#">Aviso de privacidad</a> | <a href="#">Términos y condiciones</a></p>
+        </div>
+    </footer>
+
+    <!-- Enlace al archivo de JavaScript para darle funcionalidad a los carruseles -->
+    <script src="funciones/contacto.js"></script>
+    <script src="funciones/global.js"></script>
+</body>
+</html>
