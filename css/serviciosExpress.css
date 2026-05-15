@@ -1,0 +1,166 @@
+
+/* =========================================
+   SECCIÓN SERVICIOS EXPRESS
+   ========================================= */
+
+/* Contenedor Principal de la página */
+.main-express {
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: 'Verdana', sans-serif; /* Manteniendo la línea de Morgon */
+}
+
+/* Contenedor de la barra de búsqueda para centrarla */
+.search-wrap {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.search-wrap h1 {
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+
+.search-box {
+    position: relative; /* Indispensable para anclar el botón internamente */
+    display: flex;
+    align-items: center;
+    max-width: 500px; /* Define un ancho claro para centrarlo */
+    margin: 0 auto;
+}
+
+.input-curvo {
+    width: 100%;
+    padding: 15px 100px 15px 25px; /* Espacio extra a la derecha para el botón */
+    border-radius: 50px;
+    border: 2px solid #333;
+    outline: none;
+    font-size: 16px;
+    background-color: white;
+}
+
+.btn-curvo {
+    position: absolute; /* Se mueve libremente dentro del search-box */
+    right: 5px; /* Se pega al borde derecho interno */
+    padding: 10px 25px;
+    border-radius: 50px;
+    background-color: #f1c40f;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 10; /* Asegura que esté por encima del input */
+}
+
+.btn-curvo:hover {
+    background-color: #f39c12;
+}
+
+/* CONTENEDOR GENERAL (El recuadro que separa de 3 en 3) */
+.services-grid-large {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding: 40px;
+    background-color: #fff;
+    border: 4px solid #f1c40f;
+    border-radius: 20px;
+    margin-top: 30px;
+}
+
+/* LA TARJETA INDIVIDUAL */
+.servicio-card {
+    background: #ffffff;
+    border: 1px solid #eee;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.servicio-card:hover {
+    transform: translateY(-10px); /* Efecto de elevación */
+    border-color: #f1c40f;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+/* Imagen dentro de la tarjeta */
+.servicio-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover; /* Ajusta la imagen sin deformarla */
+}
+
+.servicio-card h3 {
+    margin: 20px 0 10px;
+    text-transform: uppercase;
+    color: #000;
+    font-size: 1.2rem;
+}
+
+.servicio-card p {
+    font-size: 14px;
+    color: #666;
+    margin: 0 15px 20px;
+    line-height: 1.4;
+}
+
+/* Botón interno de la tarjeta */
+.servicio-card .cta-button {
+    margin: auto 20px 10px;
+    padding: 10px;
+    font-size: 13px;
+}
+
+/* --- ESTILOS DEL MODAL --- */
+.modal {
+    display: none; /* Oculto por defecto */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.8); /* Fondo oscuro */
+    backdrop-filter: blur(5px); /* Efecto de desenfoque al fondo */
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 5% auto;
+    padding: 30px;
+    border-radius: 15px;
+    width: 80%;
+    max-width: 600px;
+    position: relative;
+    border-top: 10px solid #f1c40f; /* Detalle amarillo Morgon */
+}
+
+.close-btn {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.modal-detalle-img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.modal-info-extra {
+    display: flex;
+    justify-content: space-around;
+    background: #f4f4f4;
+    padding: 15px;
+    border-radius: 8px;
+    margin: 20px 0;
+}
